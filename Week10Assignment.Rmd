@@ -1,0 +1,64 @@
+---
+title: "Week10Assignment"
+author: "MuthukumarSrinivasan & RajagopalSrinivasan"
+date: "Sunday, April 19, 2015"
+output: html_document
+---
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+library(XML)
+
+theURL <- "http://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population"
+bowlPool <- readHTMLTable(theURL, which = 1, header = FALSE, stringsAsFactors = FALSE)
+bowlPool
+
+```
+
+```{r}
+theURL <- "http://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population"
+hvalues <- readHTMLTable(theURL)
+
+hvalues
+
+```
+
+```{r}
+library(XML)
+
+theURL <- "http://en.wikipedia.org/wiki/List_of_countries_by_number_of_military_and_paramilitary_personnel"
+bowlPool <- readHTMLTable(theURL, which = 1, header = FALSE, stringsAsFactors = FALSE)
+bowlPool
+
+```
+
+```{r}
+theURL <- "http://en.wikipedia.org/wiki/List_of_countries_by_number_of_military_and_paramilitary_personnel"
+hvalues <- readHTMLTable(theURL)
+
+hvalues
+
+```
+
+```{r}
+library(XML)
+
+theURL <- "http://en.wikipedia.org/wiki/List_of_countries_by_level_of_military_equipment"
+bowlPool <- readHTMLTable(theURL, which = 1, header = FALSE, stringsAsFactors = FALSE)
+bowlPool
+
+```
+
+```{r}
+theURL <- "http://en.wikipedia.org/wiki/List_of_countries_by_level_of_military_equipment"
+hvalues <- readHTMLTable(theURL)
+
+hvalues
+
+```
+
+
+
